@@ -59,18 +59,18 @@
     "webpack": "^1.12.14"
   },
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start test/browser/karma.conf.js; mocha --require babel-core/register --require babel-polyfill test/isomorphic/*.jsx",
+    "test": "karma start test/browser/karma.conf.js; mocha --require babel-core/register --require babel-polyfill test/isomorphic/*.jsx",
     "build": "babel --presets es2015,stage-1,react --plugins add-module-exports ./src --out-dir ./lib; webpack --config webpack.standalone.config.js",
     "prepublish": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pushtell/react-ab-test.git"
+    "url": "git+https://github.com/vgno/react-ab-test.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pushtell/react-ab-test/issues"
+    "url": "https://github.com/vgno/react-ab-test/issues"
   },
-  "homepage": "https://github.com/pushtell/react-ab-test#readme"
+  "homepage": "https://github.com/vgno/react-ab-test#readme"
 }
